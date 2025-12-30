@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "openocd-start",
+            "type": "shell",
+            "command": "pkill openocd; openocd -f interface/stlink.cfg -f target/stm32f1x.cfg",
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}
